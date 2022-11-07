@@ -8,7 +8,6 @@ gsap.to(".bigdoors__left",{
         trigger: ".header",
         start: "50% 90%",
         end: "50% 40%",
-        // markers: true,
         scrub:1,
     },
 })
