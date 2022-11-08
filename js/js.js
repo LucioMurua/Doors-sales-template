@@ -123,7 +123,7 @@ gsap.from(".img1",{
     scrollTrigger:{
         trigger:".img1",
         start:"top 70%",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -179,3 +179,4 @@ gsap.from(".text3",{
         start:"top 70%",
     }
 })
+
