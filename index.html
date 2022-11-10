@@ -29,7 +29,7 @@
                     <li><a class="nav__li" href="#classic">Classic</a></li>
                     <li><a class="nav__li" href="#dark">Dark Theme</a></li>
                     <li><a class="nav__li" href="#about">About</a></li>
-                    <li><a class="nav__li" href="#contact">Contact</a></li>
+                    <li><a class="nav__li nav__li--contact" href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="hero__presentation">
@@ -107,25 +107,47 @@
     </main>
     <footer class="contact" id="contact">
         <h2 class="contact__title subtitle">Contact us and let's get to work</h2>
-        <form action="" class="contact__form">
+        <form action="https://formspree.io/f/xdojyjap" method="POST" class="contact__form" id="form">
             <div class="form__content1 form__group">
-                <label for="name" class="form__name">Name</label>
-                <input type="name" class="form__name1 form__input">
+                <input type="name" name="name" class="form__name1 form__input" id="name" required>
+                <label for="name" class="form__name form__label">Name</label>
             </div>
             <div class="form__content2 form__group">
-                <label for="surname" class="form__surname">Surname</label>
-                <input type="surname" class="form__surname1 form__input">
+                <input type="surname" name="surname" class="form__surname1 form__input" id="surname" required>
+                <label for="surname" class="form__surname form__label">Surname</label>
             </div>
            <div class="form__content3 form__group">
-                <label for="email" class="form__email">Email</label>
-                <input type="email" class="form__email1 form__input">
+               <input type="email" name="email" class="form__email1 form__input" id="email" required>
+               <label for="email" class="form__email form__label">Email</label>
            </div>
             <div class="form__content4 form__group">
-                <label for="message" class="form__message">Type your message here...</label>
-                <textarea name="message" id="message" class="form__message1 form__input"></textarea>
+                <textarea name="message" id="message" class="form__message1 form__input" required></textarea>
+                <label for="message" class="form__message form__label">Type your message here...</label>
             </div>
-            <button class="form__submit">Submit</button>
+            <button class="form__submit" type="submit" id="submit">Submit</button>
         </form>
+        <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.165178971101!2d-79.78256!3d36.065075000000014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5e274bafad56452f!2zMzbCsDAzJzU0LjMiTiA3OcKwNDYnNTcuMiJX!5e0!3m2!1ses!2sar!4v1668009461974!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact__info">
+            <div class="contact__contact">
+                <h3 class="contact__subtitle">Full Address</h3>
+                <p class="contact__item">609 E Gate City Blvd</p>
+                <p class="contact__item">North Carolina</p>
+                <p class="contact__item">United States</p>
+            </div>
+            <div class="contact__contact">
+                <h3 class="contact__subtitle">Contact</h3>
+                <p class="contact__item"><img src="./img/phone.svg" alt=""> 123-4567-1234</p>
+                <p class="contact__item"><img src="./img/wapp.svg" alt=""> 123-4567-1234</p>
+                <p class="contact__item"><img src="./img/mail.svg" alt=""> myemail@Email.com</p>
+            </div>
+            <div class="contact__contact">
+                <h3 class="contact__subtitle">Follow Us</h3>
+                <a href="www.facebook.com" class="contact__item"><img src="./img/facebook.svg" alt=""> Facebook</a><br>
+                <a href="www.linkedin.com" class="contact__item"><img src="./img/linkedin.svg" alt=""> Linkedin</a><br>
+                <a href="www.pinteres.com" class="contact__item"><img src="./img/pinteres.svg" alt=""> Pinteres</a>
+            </div>
+        </div>
+        <p class="copyright">© 2023 by Lucio Murua.</p>
     </footer>
 
 

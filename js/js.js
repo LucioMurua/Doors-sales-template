@@ -180,3 +180,14 @@ gsap.from(".text3",{
     }
 })
 
+gsap.from(".contact__form",{
+    duration:1,
+    background: "rgb(81, 255, 0, .5)",
+    repeat: 3,
+    scrollTrigger:{
+        trigger:".contact__form",
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions:"play reset play reset"
+    }
+})
