@@ -76,6 +76,14 @@ gsap.to(".bigdoors__container", {
 //     scrub: 1,
 // })
 
+gsap.from(".nav__li--contact",{
+    duration:1,
+    yoyo:true,
+    outlineOffset:3,
+    outline:"2px solid rgb(81, 255, 0)",
+    repeat:-1,
+    
+})
 
 gsap.to(":root",{
     "--color-1": "#001036",
