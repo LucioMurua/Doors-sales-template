@@ -1,7 +1,7 @@
 var root = document.querySelector(':root');
 gsap.registerPlugin(ScrollTrigger);
 
-
+// ======HEADER DOORS ANIMATION=====
 gsap.to(".bigdoors__left",{
     x: -300,
     scrollTrigger:{
@@ -31,51 +31,10 @@ gsap.to(".bigdoors__container", {
         start: "50% 30%",
         end: "50% 10%",
         scrub:0.5
-        // markers: {
-        //     startColor: "yellow",
-        //     endColor: "yellow",
-        //     fontSize: "1.5em"
-        // }
     },
 })
-// gsap.to(".nav", {
-//     scrollTrigger:{
-//         trigger: ".dark",
-//         start: "top 50%",
-//         scrub: 1,
-//         markers: {
-//             startColor: "orange",
-//             endColor: "orange",
-//             fontSize: "1.5em"
-//         },
-//     },
-//     onStart: function(){
-//             root.style.setProperty('--color-1', 'black')
-//             console.log("hola que tal")
-//         },
-//     onEnter: () => console.log("enter"),
-//     onLeave: () => console.log("leave"),
-//     onEnterBack: () => console.log("EnterBack"),
-//     onLeaveBack: () => console.log("LeaveBack"),
 
-// })
-
-// var rootStyle = root.style;
-
-// ScrollTrigger.create({
-//     y: 200,
-//     markers:true,
-//     start: "top 50%",
-//     end: "50% 30%",
-//     trigger: ".dark",
-//     duration: 1,
-//     onEnter: () => root.style.setProperty('--color-1', 'black'),
-//     onLeave: () => console.log("Leave"),
-//     onEnterBack: () => console.log("EnterBack"),
-//     onLeaveBack: () => root.style.setProperty('--color-1', 'var(--color-4)'),
-//     scrub: 1,
-// })
-
+// ======NAV CONTACT BUTTON ANIMATION=====
 gsap.from(".nav__li--contact",{
     duration:1,
     yoyo:true,
@@ -85,22 +44,23 @@ gsap.from(".nav__li--contact",{
     
 })
 
+// =========SECTION DARK ANIMATION========
 gsap.to(":root",{
     "--color-1": "#001036",
     "--color-3": "#E2DFFB",
     "--color-4": "#948F72",
     "--color-2": "#948F72",
+    "--color-6": "#948F72",
     duration:1,
     scrollTrigger:{
         trigger: ".dark",
         start: "top 50%",
         end: "bottom 50%",
-        // markers: true,
         toggleActions: "play reverse play reverse"
     }
 })
 
-// ========SECTION ABOUT======
+// ========SECTION ABOUT ANIMATION======
 
 gsap.from(".about__title",{
     delay:0.5,
@@ -131,17 +91,16 @@ gsap.from(".img1",{
     scrollTrigger:{
         trigger:".img1",
         start:"top 70%",
-        // markers:true,
     }
 })
 
 gsap.from(".text1",{
     delay:1,
-    x:50,
+    x:15,
     opacity:0,
     duration:2,
     scrollTrigger:{
-        trigger:".text1",
+        trigger:".img1",
         start:"top 70%",
     }
 })
@@ -158,11 +117,11 @@ gsap.from(".img2",{
 
 gsap.from(".text2",{
     delay:1,
-    x:-50,
+    x:-15,
     opacity:0,
     duration:2,
     scrollTrigger:{
-        trigger:".text2",
+        trigger:".img2",
         start:"top 70%",
     }
 })
@@ -179,15 +138,16 @@ gsap.from(".img3",{
 
 gsap.from(".text3",{
     delay:1,
-    x:50,
+    x:15,
     opacity:0,
     duration:2,
     scrollTrigger:{
-        trigger:".text3",
+        trigger:".img3",
         start:"top 70%",
     }
 })
 
+// =======FORM ANIMATION=====
 gsap.from(".contact__form",{
     duration:1,
     background: "rgb(81, 255, 0, .5)",
@@ -198,4 +158,10 @@ gsap.from(".contact__form",{
         end: "bottom top",
         toggleActions:"play reset play reset"
     }
+})
+
+// ======MENU DROPDOWN=====
+const menu = document.getElementById('menu')
+menu.addEventListener('click', ()=>{
+    menu.classList.toggle('nav__menu--active')
 })
