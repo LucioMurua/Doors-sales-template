@@ -592,9 +592,14 @@ body{
     /* =====CLASSIC SECTION===== */
     .subtitle{font-size: 2.5rem;}
     .classic__background{background-size:cover;}
+    .classic__gallery{columns: 5 350px;}
+    .classic__img{max-width: 320px;}
     
     /* =====CLASSIC DARK===== */
     .dark__background{background-size: cover;}
+    .dark__gallery{columns: 5 350px;}
+    .dark__img{max-width: 320px;}
+    
     
     /* =====SECTION ABOUT===== */
     .about__content{min-width: 320px;}
