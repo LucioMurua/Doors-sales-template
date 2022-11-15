@@ -225,13 +225,13 @@ body{
 .classic__gallery{
     background-color: var(--color-4);
     margin: 30px;
-    columns:5 350px;
+    columns:5 380px;
     text-align: center;
     column-gap: 1px;
 }
 
 .classic__img{
-    max-width: 320px;
+    max-width: 350px;
     min-width: 150px;
     margin: 10px;
     margin-bottom: .5em;
@@ -273,13 +273,13 @@ body{
 .dark__gallery{
     background-color: var(--color-4);
     margin: 30px;
-    columns:5 350px;
+    columns:5 380px;
     text-align: center;
     column-gap: 1px;
 }
 
 .dark__img{
-    max-width: 320px;
+    max-width: 350px;
     min-width: 150px;
     margin: 10px;
     margin-bottom: .5em;
